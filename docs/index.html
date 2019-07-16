@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Pagina Audi</title>
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    </head>
+    
+<body>
+
+<!-- header -->
+    <header class="main-header main-container">
+        <img src="img/wings-logo.png" class="logo">
+        <h2 class="logo-title">AUDI DRIVING EXPERIENCE</h2>
+        <p class="logo-subtitle">May 2018 / for Audi</p>
+    </header>
+    <img src="img/menu.png" id="toggle-menu" class="icon-menu toggle-menu" href="#">
+
+    <!-- menu -->
+    <nav class="main-nav main-container" id="nav">
+            <ul class="main-menu">
+                <li class="main-menu__item"><a href="#" class="main-menu__link">HOME</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">DATES AND TRACKS</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">EVENT DETAILS</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">THE CARS</a></li>
+                <li class="main-menu__item"><a href="#" class="main-menu__link">FAQs</a></li>
+            </ul>
+            <div class="main-nav__description">
+                <div class="main-nav__simbolic"></div>
+                <h4 class="main-nav__title c-red">Audi</h4>
+                <p class="main-nav__subtitle">driving experience</p>
+                <img src="img/audi-logo.png" class="main-nav__icono">
+            </div>
+        </nav>
+
+<!-- banner -->
+    <div class="container main-container">
+        <div class="container-first-banner">
+            <img src="img/audi-car1.jpg" class="main-banner__img-1">
+        </div>
+        <div class="container-banner">
+            <p class="main-banner__title">You´re invited to a day at the
+                <span class="cred">racetrack.</span>
+            </p>
+            <p class="main-banner__description-1">Be among the first to pilot the new race-engineered Audi S and RS 5 models on the very pavement that inspired them.</p>
+            <p class="main-banner__description-2">The experience is complimentary
+                <span class="c-black">-however, a reservation is essential.</span>
+            </p>
+            <a href="#" class="main-banner__button">REGISTER NOW</a>
+        </div>
+        <div class="container-second-banner">
+            <img src="img/audi-car.jpg" class="main-banner__img-2">
+        </div>  
+        <p class="mcreat">By: Creative</p> 
+    </div>
+
+<!-- script-->
+    <script>
+        let toggle = document.getElementById('toggle-menu'),
+        nav = document.getElementById('nav');
+        toggle.addEventListener('click', () => {
+            nav.classList.toggle('show');
+        })
+    </script>
+
+</body>
+</html>
